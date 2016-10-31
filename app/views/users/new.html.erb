@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Register User</title>
+  </head>
+  <body>
+    <br>
+    Please Register Here!
+
+    <%= form_for @user do |f| %>
+    <p>
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+    </p>
+    <p>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+    </p>
+    <p>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </p>
+    <p>
+    <%= f.submit %>
+    </p>
+    <% end %>
+  </body>
+</html>
